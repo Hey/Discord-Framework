@@ -1,4 +1,5 @@
 /**
+ * This will be called whenever the discord bot loaded
  * 
  * @param {Object} client The Discord client
  */

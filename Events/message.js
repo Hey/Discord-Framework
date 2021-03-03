@@ -5,9 +5,9 @@
  * validates certain stuff such as author.
  * 
  * @param {Object} client - Discord client user
- * @param {string} msg        - The message received
+ * @param {string} msg    - The message received
 */
-module.exports = (client, msg) => {
+module.exports = (msg, client) => {
     
     // Deny usage in dm's and don't allow other bots to use commands
     if (msg.author.bot || msg.channel.type === 'dm') return;

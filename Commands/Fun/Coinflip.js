@@ -4,7 +4,7 @@ module.exports.config = {
     description: 'Flips a coin',
 };
 
-module.exports.run = (client, msg) => {
+module.exports.run = (msg, client) => {
 
     // Flip a random coin
     const outcomes = ['heads', 'tails'];

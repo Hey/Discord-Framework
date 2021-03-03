@@ -18,7 +18,7 @@ module.exports = function (client) {
 
     // Debugging purposes, possibly
     const eventOrdering = eventFiles
-        .map((event) => eevent
+        .map((event) => event
             .toString()
             .split('Events/')[1]
             .split('.js')[0])
