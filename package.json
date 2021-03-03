@@ -1,0 +1,35 @@
+{
+  "name": "my-discord-framework",
+  "version": "1.0.0",
+  "description": "My Discord framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js -L",
+    "lint": "eslint --fix",
+    "lint-init": "eslint --init"
+  },
+  "author": "Hey (https://github.com/Hey)",
+  "license": "",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "file-system": "^2.2.2",
+    "module-alias": "^2.2.2",
+    "require-all": "^3.0.0",
+    "require-directory": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  },
+  "_moduleAliases": {
+    "@events": "Events",
+    "@services": "Services",
+    "@commands": "Commands",
+    "@helpers": "Helpers",
+    "@framework": "Services/Framework"
+  }
+}
