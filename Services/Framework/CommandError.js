@@ -33,7 +33,7 @@ module.exports.asyncHandler = (commandFile, client, msg, args) => {
 
   // Error handling
   try {
-    commandFile.run(client, msg, args);
+    await commandFile.run(client, msg, args);
   } catch (err) {
     Handle(err, msg);
   }
