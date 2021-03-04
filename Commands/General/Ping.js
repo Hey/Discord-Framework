@@ -4,7 +4,7 @@ module.exports.config = {
     description: 'Sends back pong',
 };
 
-module.exports.run = async (msg, client) => {
+module.exports.run = async (client, msg) => {
 
     // Import packages
     const { MessageEmbed } = require('discord.js');

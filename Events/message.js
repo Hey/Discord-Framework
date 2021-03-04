@@ -7,7 +7,9 @@
  * @param {Object} client - Discord client user
  * @param {string} msg    - The message received
 */
-module.exports = (msg, client) => {
+module.exports = (client, msg) => {
+
+    const { CommandError } = require('@framework');
     
     // Deny usage in dm's and don't allow other bots to use commands
     if (msg.author.bot || msg.channel.type === 'dm') return;
@@ -23,6 +25,6 @@ module.exports = (msg, client) => {
     const aliases = client.commands.get(client.aliases.get(command.slice(process.env.PREFIX.length)));
     const commandFile = normalCommands || aliases;
 
-    if (commandFile) commandFile.run(client, msg, args);
+    if (commandFile) CommandError.asyncHandler(commandFile, client, msg, args);
 
 };

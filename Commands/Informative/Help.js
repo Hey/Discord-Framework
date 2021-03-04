@@ -4,7 +4,7 @@ module.exports.config = {
     description: 'Shows how to use a command and how to use the bot.',
 };
 
-module.exports.run = (msg, client) => {
+module.exports.run = (client, msg) => {
 
     // Import packages
     const { MessageEmbed } = require('discord.js');
