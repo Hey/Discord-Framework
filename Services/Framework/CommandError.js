@@ -13,7 +13,7 @@ async function Handle (error, msg) {
   const embed = new MessageEmbed()
     .setColor('#FF0000')
     .setTitle('Error')
-    .setDescription(error.message);
+    .setDescription(error);
 
   // Sends embed
   msg.channel.send(embed);
@@ -30,7 +30,15 @@ async function Handle (error, msg) {
  * @param {array} args - Split on space message content 
  */
 module.exports.asyncHandler = (commandFile, client, msg, args) => {
-  Promise
-    .resolve(commandFile.run(client, msg, args))
-    .catch(error => Handle(error, msg))
+
+  // Error handling
+  try {
+    commandFile.run(client, msg, args);
+  } catch (err) {
+    Handle(err, msg);
+  }
+
+  // Promise
+  //   .resolve(commandFile.run(client, msg, args))
+  //   .catch(error => Handle(error, msg))
 }
