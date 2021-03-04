@@ -12,7 +12,6 @@
   "author": "Hey (https://github.com/Hey)",
   "license": "",
   "dependencies": {
-    "@sentry/node": "^6.2.1",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "file-system": "^2.2.2",
