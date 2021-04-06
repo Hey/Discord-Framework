@@ -29,7 +29,7 @@ async function Handle (error, msg) {
  * @param {Object} msg - Message object
  * @param {array} args - Split on space message content 
  */
-module.exports.asyncHandler = (commandFile, client, msg, args) => {
+module.exports.asyncHandler = async (commandFile, client, msg, args) => {
 
   // Error handling
   try {
