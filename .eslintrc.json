@@ -4,50 +4,28 @@
   },
   "extends": "airbnb-base",
   "rules": {
-    "quotes": [4, "single", { "avoidEscape": true }],
-    "block-spacing": 1,
-    "no-useless-return": 1,
-    "require-await": 1,
-    "no-useless-catch": 1,
-    "no-return-await": 1,
-    "no-shadow": 1,
-    "eqeqeq": 1,
-    "default-case": 1,
-    "vars-on-top": 1,
-    "no-tabs": 0,
-    "comma-dangle": 1,
-    "no-param-reassign": 0,
-    "no-console": 0,
-    "camelcase": 1,
-    "no-irregular-whitespace": 1,
-    "func-names": 0,
-    "consistent-return": 0,
-    "radix": 0,
-    "global-require": 0,
-    "multiline-comment-style": 0,
-    "padded-blocks": 0,
-    "no-trailing-spaces": 0,
-    "import/no-unresolved": 0,
-    "lines-between-class-members": 1,
-    "no-var": 1,
-    "no-lone-blocks": 1,
-    "no-await-in-loop": 0,
-    "no-loop-func": 0,
+    "valid-jsdoc": [
+      "error",
+      {
+        "requireReturn": false
+      }
+    ],
+    "require-await": "error",
     "linebreak-style": 0,
-    "valid-jsdoc": ["warn", {
-      "requireReturn": false
-    }],
-    "no-invalid-this": 1,
-    "no-multi-str": 1,
-    "require-jsdoc": 1,
-    "curly": 0,
-    "import/no-dynamic-require": 0,
-    "max-classes-per-file": ["error", 1],
-    "max-len": ["error", {
-      "comments": 80,
-      "code": 130,
-      "ignoreUrls": true,
-      "tabWidth": 4
-    }]
+    "dot-location": ["error", "property"],
+    "no-unexpected-multiline": "error",
+    "import/no-unresolved": 0,
+    "func-names": 0,
+    "padded-blocks": [
+      "error",
+      "always"
+    ],
+    "brace-style": [
+      "error",
+      "stroustrup",
+      {
+        "allowSingleLine": false
+      }
+    ]
   }
 }
