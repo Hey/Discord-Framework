@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js -L",
-    "lint": "eslint --fix",
+    "lint": "eslint --fix . --fix",
     "lint-init": "eslint --init"
   },
   "author": "Hey (https://github.com/Hey)",
