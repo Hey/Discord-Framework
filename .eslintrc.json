@@ -1,4 +1,4 @@
-{
+ {
   "env": {
     "node": true
   },
@@ -16,6 +16,7 @@
     "no-unexpected-multiline": "error",
     "import/no-unresolved": 0,
     "func-names": 0,
+    "global-require": 0,
     "padded-blocks": [
       "error",
       "always"
